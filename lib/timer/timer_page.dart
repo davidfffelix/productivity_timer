@@ -60,7 +60,35 @@ class TimerPage extends StatelessWidget {
             const Expanded(
               child: Text('Hello!'),
             ),
-            Row(children: []),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(defaultPadding),
+                ),
+                Expanded(
+                  child: ProductivityButton(
+                    color: Color(0xff212121),
+                    text: 'Stop',
+                    size: 3,
+                    onPressed: emptyMethod,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(defaultPadding),
+                ),
+                Expanded(
+                  child: ProductivityButton(
+                    color: Color(0xff009688),
+                    text: 'Start',
+                    onPressed: emptyMethod,
+                    size: 3,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(defaultPadding),
+                ),
+              ],
+            ),
           ],
         ),
       ),
