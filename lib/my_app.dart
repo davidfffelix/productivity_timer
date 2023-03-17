@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'timer/timer_page.dart';
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,14 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My Work Time'),
-        ),
-        body: const Center(
-          child: Text('My Work Time'),
-        ),
-      ),
+      home: TimerPage(),
     );
   }
 }
