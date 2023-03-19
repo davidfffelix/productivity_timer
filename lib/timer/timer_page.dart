@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/productivity_button.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class TimerPage extends StatelessWidget {
   const TimerPage({super.key});
@@ -10,6 +11,7 @@ class TimerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff2D2D2D),
       appBar: AppBar(
         title: const Text('My Work Time'),
       ),
@@ -23,7 +25,7 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: ProductivityButton(
-                    color: const Color(0xff009688),
+                    color: const Color(0xffee4035),
                     text: 'Work',
                     size: 3,
                     onPressed: emptyMethod,
@@ -34,7 +36,7 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: ProductivityButton(
-                    color: Color(0xff607D8B),
+                    color: Color(0xff7bc043),
                     //TODO: Formatar o texto
                     text: 'Short Break',
                     size: 3,
@@ -46,7 +48,7 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: ProductivityButton(
-                    color: Color(0xff455A64),
+                    color: Color(0xff0057e7),
                     text: 'Long Break',
                     size: 3,
                     onPressed: emptyMethod,
@@ -57,8 +59,18 @@ class TimerPage extends StatelessWidget {
                 ),
               ],
             ),
-            const Expanded(
-              child: Text('Hello!'),
+            Expanded(
+              child: CircularPercentIndicator(
+                radius: 100,
+                lineWidth: 10,
+                percent: 1,
+                // Definimos widget dentro do indicador
+                center: Text(
+                  '30:00',
+                  style: Theme.of(context).textTheme.displayMedium,
+                ),
+                progressColor: Color(0xff009688),
+              ),
             ),
             Row(
               children: [
@@ -67,7 +79,7 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: ProductivityButton(
-                    color: Color(0xff212121),
+                    color: Color(0xfff37736),
                     text: 'Stop',
                     size: 3,
                     onPressed: emptyMethod,
@@ -78,8 +90,8 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: ProductivityButton(
-                    color: Color(0xff009688),
-                    text: 'Start',
+                    color: Color(0xfff6cd61),
+                    text: 'Restart',
                     onPressed: emptyMethod,
                     size: 3,
                   ),
