@@ -16,7 +16,8 @@ class TimerPage extends StatelessWidget {
         title: const Text('My Work Time'),
       ),
       // Widgets do tipo builder normalmente esperam como parâmetro uma função que retorna algo
-      // Com o constraints conseguimos pegar a largura e altura
+      // Com o constraints conseguimos pegar a largura e altura disponível na tela. Nesse caso, somente o radius.
+      // LayoutBuilder = Usamos ele para deixar a largura relativa ao tamanho da tela
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
           // Pegamos a largura disponível pelo constraints
@@ -67,7 +68,7 @@ class TimerPage extends StatelessWidget {
               // O const foi retirado por que o child (child: CircularPercentIndicator) não é constante
               Expanded(
                 child: CircularPercentIndicator(
-                  radius: 100,
+                  radius: availableWidth / 2.5,
                   lineWidth: 10,
                   percent: 1,
                   // Definimos widget dentro do indicador
