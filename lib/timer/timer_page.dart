@@ -86,7 +86,7 @@ class TimerPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: ProductivityButton(
-                      color: Color(0xfff37736),
+                      color: Color(0xff5e35b1),
                       text: 'Stop',
                       size: 3,
                       onPressed: emptyMethod,
@@ -97,7 +97,7 @@ class TimerPage extends StatelessWidget {
                   ),
                   Expanded(
                     child: ProductivityButton(
-                      color: Color(0xfff6cd61),
+                      color: Color(0xff5e35b1),
                       text: 'Restart',
                       onPressed: emptyMethod,
                       size: 3,
