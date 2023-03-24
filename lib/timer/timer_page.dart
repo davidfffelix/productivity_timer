@@ -13,7 +13,11 @@ class TimerPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff2D2D2D),
       appBar: AppBar(
-        title: const Text('My Work Time'),
+        backgroundColor: const Color(0xff2D2D2D),
+        elevation: 0,
+        title: const Text(
+          'Productivity Timer',
+        ),
       ),
       // Widgets do tipo builder normalmente esperam como parâmetro uma função que retorna algo
       // Com o constraints conseguimos pegar a largura e altura disponível na tela. Nesse caso, somente o radius.
