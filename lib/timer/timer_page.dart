@@ -29,7 +29,6 @@ class TimerPage extends StatelessWidget {
         ),
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
-            // Pegamos a largura disponível pelo constraints
             final double availableWidth = constraints.maxWidth;
             return Column(
               children: [
@@ -73,9 +72,11 @@ class TimerPage extends StatelessWidget {
                 Expanded(
                   child: CircularPercentIndicator(
                     progressColor: const Color(0xff5e35b1),
+                    backgroundColor: Colors.deepPurpleAccent,
                     radius: availableWidth / 2.5,
-                    lineWidth: 10,
-                    percent: 1,
+                    // circularStrokeCap: CircularStrokeCap.round,
+                    lineWidth: 15,
+                    percent: 0.45,
                     center: const Text(
                       '30:00',
                       style: TextStyle(
