@@ -92,20 +92,36 @@ class TimerPage extends StatelessWidget {
                       padding: EdgeInsets.all(defaultPadding),
                     ),
                     Expanded(
-                      child: ProductivityButton(
-                        text: 'Stop',
-                        size: 3,
-                        onPressed: emptyMethod,
+                      child: Container(
+                        height: 70,
+                        width: 70,
+                        decoration: const BoxDecoration(
+                          color: Color(0xff828A9F),
+                          shape: BoxShape.circle,
+                        ),
+                        child: IconButton(
+                          iconSize: 40,
+                          color: Colors.white,
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.pause,
+                          ),
+                        ),
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.all(defaultPadding),
                     ),
                     Expanded(
-                      child: ProductivityButton(
-                        text: 'Restart',
-                        size: 3,
-                        onPressed: emptyMethod,
+                      child: Container(
+                        height: 70,
+                        width: 70,
+                        child: IconButton(
+                          iconSize: 40,
+                          color: Colors.white,
+                          onPressed: () {},
+                          icon: const Icon(Icons.restart_alt),
+                        ),
                       ),
                     ),
                     Padding(
@@ -121,3 +137,12 @@ class TimerPage extends StatelessWidget {
     );
   }
 }
+
+
+// Expanded(
+//                       child: ProductivityButton(
+//                         text: 'Restart',
+//                         size: 3,
+//                         onPressed: emptyMethod,
+//                       ),
+//                     ),
