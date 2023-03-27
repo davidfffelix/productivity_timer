@@ -71,10 +71,10 @@ class TimerPage extends StatelessWidget {
                 ),
                 Expanded(
                   child: CircularPercentIndicator(
-                    progressColor: const Color(0xff5e35b1),
                     backgroundColor: Colors.deepPurpleAccent,
+                    progressColor: const Color(0xff5e35b1),
                     radius: availableWidth / 2.5,
-                    // circularStrokeCap: CircularStrokeCap.round,
+                    circularStrokeCap: CircularStrokeCap.round,
                     lineWidth: 15,
                     percent: 0.45,
                     center: const Text(
