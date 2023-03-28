@@ -116,6 +116,10 @@ class TimerPage extends StatelessWidget {
                       child: Container(
                         height: 70,
                         width: 70,
+                        decoration: const BoxDecoration(
+                          color: Color(0xff828A9F),
+                          shape: BoxShape.circle,
+                        ),
                         child: IconButton(
                           iconSize: 40,
                           color: Colors.white,
