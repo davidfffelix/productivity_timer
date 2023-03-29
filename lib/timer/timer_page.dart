@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/bottom_buttons_home_page.dart';
 import '../components/productivity_button.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -92,40 +93,16 @@ class TimerPage extends StatelessWidget {
                       padding: EdgeInsets.all(defaultPadding),
                     ),
                     Expanded(
-                      child: Container(
-                        height: 70,
-                        width: 70,
-                        decoration: const BoxDecoration(
-                          color: Color(0xff828A9F),
-                          shape: BoxShape.circle,
-                        ),
-                        child: IconButton(
-                          iconSize: 40,
-                          color: Colors.white,
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.pause,
-                          ),
-                        ),
+                      child: BottomButtonsHomePage(
+                        onPressed: emptyMethod,
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.all(defaultPadding),
                     ),
                     Expanded(
-                      child: Container(
-                        height: 70,
-                        width: 70,
-                        decoration: const BoxDecoration(
-                          color: Color(0xff828A9F),
-                          shape: BoxShape.circle,
-                        ),
-                        child: IconButton(
-                          iconSize: 40,
-                          color: Colors.white,
-                          onPressed: () {},
-                          icon: const Icon(Icons.restart_alt),
-                        ),
+                      child: BottomButtonsHomePage(
+                        onPressed: emptyMethod,
                       ),
                     ),
                     Padding(
@@ -141,6 +118,28 @@ class TimerPage extends StatelessWidget {
     );
   }
 }
+
+
+
+// Container(
+//                         height: 70,
+//                         width: 70,
+//                         decoration: const BoxDecoration(
+//                           color: Color(0xff828A9F),
+//                           shape: BoxShape.circle,
+//                         ),
+//                         child: IconButton(
+//                           iconSize: 40,
+//                           color: Colors.white,
+//                           onPressed: () {},
+//                           icon: const Icon(Icons.restart_alt),
+//                         ),
+//                       ),
+
+
+
+
+
 
 
 // Expanded(

@@ -16,9 +16,11 @@ class ProductivityButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.resolveWith<Color?>((states) {
-          return const Color(0xff5e35b1);
-        }),
+        backgroundColor: MaterialStateProperty.resolveWith<Color?>(
+          (states) {
+            return const Color(0xff5e35b1);
+          },
+        ),
       ),
       onPressed: onPressed,
       child: Text(
