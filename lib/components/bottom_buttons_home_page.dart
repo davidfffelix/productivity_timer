@@ -7,9 +7,11 @@ class BottomButtonsHomePage extends StatelessWidget {
   const BottomButtonsHomePage({
     Key? key,
     required this.onPressed,
+    required this.bottomIcon,
   }) : super(key: key);
 
   final VoidCallback onPressed;
+  final IconData? bottomIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +19,16 @@ class BottomButtonsHomePage extends StatelessWidget {
       height: 70,
       width: 70,
       decoration: const BoxDecoration(
-        color: Color(0xff828A9F),
+        color: Color(0xff5e35b1),
         shape: BoxShape.circle,
       ),
       child: IconButton(
         iconSize: 40,
         color: Colors.white,
         onPressed: onPressed,
-        icon: const Icon(Icons.restart_alt),
+        icon: Icon(
+          bottomIcon,
+        ),
       ),
     );
   }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'timer/timer_page.dart';
+import 'home/home_page.dart';
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: TimerPage(),
+      home: HomePage(),
     );
   }
 }
