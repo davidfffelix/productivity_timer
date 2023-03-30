@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../components/bottom_buttons_home_page.dart';
-import '../components/productivity_button.dart';
+import '../widgets/app_bar_widget.dart';
+import '../widgets/bottom_buttons_widget.dart';
+import '../widgets/productivity_button_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,17 +15,32 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color(0xff2D2D2D),
-        appBar: AppBar(
-          backgroundColor: const Color(0xff2D2D2D),
-          elevation: 0,
-          title: const Padding(
-            padding: EdgeInsets.only(top: 20),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Productivity Timer',
-              ),
+        appBar: AppBarWidget(
+          leading: GestureDetector(
+            child: const Icon(
+              Icons.menu,
+              // color: Colors.white,
+              color: Color(0xff5e35b1),
             ),
+            onTap: () {
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (context) {},
+              //   ),
+              // );
+            },
+          ),
+          title: const Text(
+            'Productivity Timer',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
+          actions: const Icon(
+            Icons.notifications_off,
+            color: Color(0xff5e35b1),
           ),
         ),
         // Widgets do tipo builder normalmente esperam como parâmetro uma função que retorna algo
