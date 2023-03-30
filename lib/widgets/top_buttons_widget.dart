@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProductivityButton extends StatelessWidget {
-  const ProductivityButton({
+class TopButtonsWidget extends StatelessWidget {
+  const TopButtonsWidget({
     super.key,
     required this.text,
     required this.size,

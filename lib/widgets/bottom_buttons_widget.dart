@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-class BottomButtonsHomePage extends StatelessWidget {
-  const BottomButtonsHomePage({
+class BottomButtonsWidget extends StatelessWidget {
+  const BottomButtonsWidget({
     Key? key,
     required this.onPressed,
     required this.bottomIcon,

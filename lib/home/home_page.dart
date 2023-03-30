@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_bar_widget.dart';
 import '../widgets/bottom_buttons_widget.dart';
-import '../widgets/productivity_button_widget.dart';
+import '../widgets/top_buttons_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class HomePage extends StatelessWidget {
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.all(defaultPadding),
                       ),
                       Expanded(
-                        child: ProductivityButton(
+                        child: TopButtonsWidget(
                           text: 'Work',
                           size: 3,
                           onPressed: emptyMethod,
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.all(defaultPadding),
                       ),
                       Expanded(
-                        child: ProductivityButton(
+                        child: TopButtonsWidget(
                           text: 'Short Break',
                           size: 3,
                           onPressed: emptyMethod,
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.all(defaultPadding),
                       ),
                       Expanded(
-                        child: ProductivityButton(
+                        child: TopButtonsWidget(
                           text: 'Long Break',
                           size: 3,
                           onPressed: emptyMethod,
@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.all(defaultPadding),
                       ),
                       Expanded(
-                        child: BottomButtonsHomePage(
+                        child: BottomButtonsWidget(
                           onPressed: emptyMethod,
                           bottomIcon: Icons.pause,
                         ),
@@ -125,7 +125,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.all(defaultPadding),
                       ),
                       Expanded(
-                        child: BottomButtonsHomePage(
+                        child: BottomButtonsWidget(
                           onPressed: emptyMethod,
                           bottomIcon: Icons.restart_alt,
                         ),
