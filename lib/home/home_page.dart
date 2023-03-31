@@ -38,9 +38,12 @@ class HomePage extends StatelessWidget {
               fontSize: 20,
             ),
           ),
-          actions: const Icon(
-            Icons.notifications_off,
-            color: Color(0xff5e35b1),
+          actions: GestureDetector(
+            child: const Icon(
+              Icons.notifications_off,
+              color: Color(0xff5e35b1),
+            ),
+            onTap: () {},
           ),
         ),
         // Widgets do tipo builder normalmente esperam como parâmetro uma função que retorna algo
