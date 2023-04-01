@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_bar_widget.dart';
-import '../widgets/bottom_buttons_widget.dart';
+import '../widgets/bottom_icons_widgets.dart';
 import '../widgets/top_buttons_widget.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
